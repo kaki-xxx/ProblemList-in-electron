@@ -1,0 +1,21 @@
+{
+  "name": "problemlist",
+  "version": "1.0.0",
+  "description": "問題を解いたり、採点するのを補助するプログラム",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . --overwrite"
+  },
+  "author": "kaki-xxx",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProblemList</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="row mb-3 mt-3">
+    <div class="col-2 d-flex align-items-center">
+      <label>問題数</label>
+    </div>
+    <div class="col-2">
+      <input class="form-control" id="input-create" type="text" placeholder="問題数" aria-label="default input example">
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary" id="btn-create">作成</button>
+    </div>
+    <div class="col-2 d-flex align-items-center form-check">
+        <input class="form-check-input" type="checkbox" id="check-create" checked>
+        <label class="form-check-label" for="check-create">
+            <span class="small">新規作成</span>
+        </label>
+    </div>
+    <div class="col-2">
+      <input class="form-control" id="score" type="text" placeholder="得点" aria-label="default input example">
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary" id="btn-score">得点計算</button>
+    </div>
+    <div class="col-2 d-flex align-items-center">
+      <label>正解ファイル</label>
+    </div>
+    <div class="col-8 mt-2">
+      <input type="file" class="form-control" id="answerFile">
+    </div>
+    <div class="col-2 mt-2">
+      <button class="btn btn-primary" id="btn-auto">自動採点</button>
+    </div>
+  </div>
+  <div class="row" id="answers">
+  </div>
+</div>
+    <script src="./dist/index.js"></script>
+    <script src="./render.js"></script>
+</body>
+</html>
